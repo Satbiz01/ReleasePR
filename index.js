@@ -19,7 +19,6 @@ function goToCart() {
 window.addEventListener("click", (event) => {
   event.preventDefault();
   if (event.target.hasAttribute("data-cart")) {
-    console.log('asd')
       let btn_bye = event.target
       let card = btn_bye.closest(".catalog-list-item")
       let product_info = {
@@ -27,7 +26,7 @@ window.addEventListener("click", (event) => {
         img: card.querySelector(".catalog-list-item-img").getAttribute("src"),
         price: card.querySelector(".catalog-list-item-p-price").innerText
       }
-   
+    console.log(product_info)
     let cart = JSON.parse(localStorage.getItem("cart")) || []
     cart.push(product_info)
     localStorage.setItem("cart", JSON.stringify(cart))
