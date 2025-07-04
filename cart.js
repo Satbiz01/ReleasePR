@@ -7,12 +7,12 @@ cart.forEach(card => {
   <div class="card mb-3" style="max-width: 540px;">
   <div class="row g-0">
     <div class="col-md-4">
-      <img src="${catalog-list-item-img.img}" class="img-fluid rounded-start" alt="...">
+      <img src="${card.img}" class="img-fluid rounded-start" alt="...">
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title">${catalog-list-item-p-st.title}</h5>
-        <p class="card-text"><small class="text-muted">${catalog-list-item-p-price.price}</small></p>
+        <h5 class="card-title">${card.title}</h5>
+        <p class="card-text"><small class="text-muted">${card.price}</small></p>
       </div>
     </div>
   </div>
